@@ -1,0 +1,115 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+.yarnrc.yml
+
+# pnpm
+.pnpm-store/
+
+# =========================
+# Logs
+# =========================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Runtime data
+# =========================
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Build output
+# =========================
+dist/
+build/
+out/
+.next/
+coverage/
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# IDEs & Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# =========================
+# OS Files
+# =========================
+Thumbs.db
+.DS_Store
+
+# =========================
+# Testing
+# =========================
+coverage/
+.nyc_output/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+
+# =========================
+# Docker
+# =========================
+.dockerignore
+
+# =========================
+# Misc
+# =========================
+*.tgz
+*.gz
+*.zip
+
+# =========================
+# Firebase
+# =========================
+.firebase/
+
+# =========================
+# Serverless
+# =========================
+.serverless/
+
+# =========================
+# PM2
+# =========================
+ecosystem.config.js
