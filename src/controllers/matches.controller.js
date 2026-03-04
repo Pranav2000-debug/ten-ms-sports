@@ -44,9 +44,13 @@ export const createMatch = async (req, res) => {
       })
       .returning();
 
-    res.status(201).json({ message: "Match created successfully", data: event });
+    if (res.app.locals.broadcastMatchCreated) {
+      res.app.locals.broadcastMatchCreated(event);
+    }
+
+    return res.status(201).json({ message: "Match created successfully", data: event });
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : String(error);
-    res.status(500).json({ error: "Failed to create a match", details: errorMessage });
+    return res.status(500).json({ error: "Failed to create a match", details: errorMessage });
   }
 };
